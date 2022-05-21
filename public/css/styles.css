@@ -8,6 +8,18 @@ box-sizing: border-box;}
 body{
     background-color: #eaeaea;
 }
+h5 {
+    text-align:center; 
+    font-size:18px;
+}
+a { outline: none;
+    text-decoration: none;
+    padding: 2px 1px 0;
+    color: black 
+
+}
+a:hover {font-weight: bolder;
+}
 
 /* Estilos de header  */
 
@@ -16,8 +28,9 @@ body{
     padding: 15px;
 }
 .ingresodato{
-    width:150px;
     height: 30px;
+    border-radius: 3 rem;
+    width: 100%;
     
 }
 header .logoybarra {
@@ -72,6 +85,8 @@ header .menu_tienda {
     display:flex;
     width: 50%;
     justify-content:left;
+    padding-top: 20px;
+    padding-bottom: 5px;
 }
 header .items_menu_tienda{
     margin-left: 10px;
@@ -81,6 +96,8 @@ header .menu_usuario {
     display:flex;
     width: 50%;
     justify-content: right;
+    padding-top: 20px;
+    padding-bottom: 5px;
 }
 
 header .hamburguer-button{
@@ -102,6 +119,8 @@ header .hamburguer-button i{
 
 
 /* Estilos de cuerpo principal  */
+
+body h2 {text-align: center;}
 
 main{
     width: 90%;
@@ -181,11 +200,13 @@ main section article i{
 
 footer {
     padding: 15px;
+    font-size: 12px;
 }
 footer section {
     padding: 15px;
     text-align: center;
 }
+
 footer section div {
     text-align: center;
     padding: 10px
@@ -198,7 +219,7 @@ footer section div i {
 /* Adaptabilidad para tablets y desktop */
 /* Tablet */
 
-@media (min-width: 361px){
+@media (min-width: 420px){
 
 .descripcion {display:block}
 
@@ -245,7 +266,16 @@ header .compraencuotas {
 
 @media (min-width: 510px){
     header nav {margin-top: 10px;}
+    
+    .listadoregistro{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 510px;}
+
 }
+
+
 /* Desktop */
 
 @media (min-width: 769px){
@@ -273,17 +303,24 @@ header .compraencuotas {
     footer .cajasfooter {
         display:flex;
         justify-content: space-evenly;
-    }      
-    
-    
+    }   
+    .listadoregistro{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 510px;
+    }
 }
 
 /* Estilos registro */
 
 .logoregister {
-    width: 100px;
+    width: 200px;
 }
-
+.cajaregistro {
+    width: 100%;
+    text-align: left;
+}
 .top-header-register {
     background-color: #eac926;
     padding: 15px;
@@ -292,12 +329,15 @@ header .compraencuotas {
 
 body .listadoregistro {
     text-align: center;
-    display:flex;
-    flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
     margin: 0 auto;
     font-size: 12px;
-    width: 50%;
-    background-color:#fff;
+    width: 100%;
+    background-color: rgb(224, 233, 158);
+    border: 1px solid grey;
+    padding: 25px;
+    border-radius: 1rem;
 }
 body .listadologin {
     display:flex;
@@ -305,13 +345,15 @@ body .listadologin {
     text-align: center;
     margin: 40px;
 }
-body div {
-    padding:5px;
-}
+
 body .camposformulario {
     padding: 3px;
     margin: 0 auto;
 }
+body .camposregistro{
+    padding:10px;
+}
+
 
 .cajacelesteregistro{
     height: 30%;

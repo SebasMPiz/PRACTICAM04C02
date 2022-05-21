@@ -23,54 +23,57 @@
     </header>
  
 <body>
-   
-
     <div class = "cajacelesteregistro"></div>
     <div class = "tituloregistro">
     <h2>Completa tus datos</h2>
     </div>
     <form class = "listadoregistro" action = "./" method = "GET">
-            
-            <div>
+            <div class = "cajaregistro">
+            <div class = "camposregistro">
                 <label for="nombre_apellido">Nombre y apellido</label><br>
-                <div>
                     <input class="ingresodato" type="text" id="nombre_apellido" name="nombre_apellido" required minlength="2">
-                </div> 
-            </div>        
-            <div>
+             </div>        
+            <div class = "camposregistro">
                 <label for="nickname">Nombre de Usuario:</label><br>
+                               
                 <input class="ingresodato" type="text" id="nickname" name="nickname" required>
             </div> 
-            <div>
+            <div class = "camposregistro">
                 <label for="nacimiento">Fecha de Nacimiento:</label><br>
                 <input  class="ingresodato" type="date"  name="nacimiento">
             </div>
-            <div>
+            <div class = "camposregistro">
                 <label for="domicilio">Domicilio:</label><br>
                 <input class="ingresodato" type="text" id="domicilio" name="domicilio">
             </div> 
-            <div>
-                <label for="perfil">Perfil de Usuario:</label><br>
+            <div  class = "camposregistro" style ="display:flex; flex-direction:column">
+                <label style="margin-bottom:7px" for="perfil">Perfil de Usuario:</label>
+                <p>
                 <input type="radio" value="Vendedor" name ="perfil"> Vendedor
+                </p>
+                <p>
                 <input type="radio" value="Comprador" name ="perfil"> Comprador
+                </p>
             </div> 
-            <div>
-                <label for="intereses">Categorias de Interes:</label><br>
+            <div class = "camposregistro" style ="display:flex; flex-direction:column">
+                <label for="intereses">Categorias de Interes:</label>
+                <div>
                 <input type="checkbox" value="Electro" name ="Electro"> Electro
                 <input type="checkbox" value="Moda" name ="Moda"> Moda
                 <input type="checkbox" value="Hogar" name ="Hogar"> Hogar
                 <input type="checkbox" value="Jugueteria" name ="Jugueteria"> Jugueteria
                 <input type="checkbox" value="Vida Sana" name ="Vida Sana"> Vida Sana
+                </div>
             </div> 
-            <div>
+            <div class = "camposregistro">
                 <label for="fotousuario">Foto de Usuario:</label><br>
                 <input type="file" name="fotousuario" accept=".jpeg">
             </div> 
-            <div>
+            <div class = "camposregistro">
                 <label for="password">Contraseña:</label><br>
                 <input class="ingresodato" type="password" name="password">
             </div> 
-            <div>
+            <div class = "camposregistro">
                 <label for="password">Confirmar contraseña:</label><br>
                 <input class="ingresodato" type="password" name="password">
             </div> 
@@ -81,11 +84,7 @@
             <div class = "boton">
                 <input type="reset" value="Reestablecer">
             </div> 
-
-
-
-
-            
+        </div>           
     </form>
 </body>
 <footer>

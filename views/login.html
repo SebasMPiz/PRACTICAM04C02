@@ -13,44 +13,39 @@
         <link rel="stylesheet" href="css/normalize.css">
     </head>
 
-    <header class = "top-header"> 
-        <div class = "logoybarra">
-        <img src="images/logo-mercado-liebre.svg" class = "logo">
+    <header class = "top-header-register"> 
+        <div class = "logoycomprar">
+        <img src="images/logo-mercado-liebre.svg" class = "logoregister">
         <h2>
             <div class="compraencuotas"> <i class="fa-solid fa-hand-holding-dollar"></i> Comprá en cuotas y sin tarjeta de crédito</div>
         </h2>
         </div>
-       
     </header>
-    <section>
-        <img src="images/img-home-banner.jpg" alt="Banner de ofertas" class="logobanner" >
-    </section>
-    
-<body>
-    <form class = "listadologin" action = "./" method = "GET">
-                  
-            <div class = "camposformulario">
-                <label for="nickname">Nombre de Usuario:</label>
-                <input type="text" id="nickname" name="nickname">
+    <body>
+    <div class = "cajacelesteregistro"></div>
+    <div class = "tituloregistro">
+    <h2>Ingresa tus datos</h2>
+    </div>
+    <form class = "listadoregistro" action = "./" method = "GET">
+            <div class = "cajaregistro">
+            <div class = "camposregistro">
+                <label for="nickname">Nombre de Usuario:</label><br>
+                               
+                <input class="ingresodato" type="text" id="nickname" name="nickname" required>
             </div> 
-            <div class = "camposformulario">
-                <label for="password">Contraseña:</label>
-                <input type="password" name="password">
-            </div>
-            <div>
+            <div class = "camposregistro">
+                <label for="password">Contraseña:</label><br>
+                <input class="ingresodato" type="password" name="password">
+            </div> 
+            
             <div class = "botonenviar">
                 <input type="submit" value="Enviar">
             </div> 
-            <div class = "boton reset">
+            <div class = "boton">
                 <input type="reset" value="Reestablecer">
-            </div>
             </div> 
-
-
-
-
-            
-    </form>
+        </div>           
+    </form>    
 </body>
 <footer>
     <div class = "cajasfooter">
