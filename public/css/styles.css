@@ -149,10 +149,17 @@ main article .main-article {
     display: flex;
     flex-wrap: wrap;
 }
+main section article:hover .descripcion{
+    opacity: 100%;
+    transition: all 1.5s;
+}
 
 main section article {
     background-color: #fff;
     margin-bottom: 10px;    
+}
+main section article:hover {
+    box-shadow : 0px 0px 10px black;
 }
 main section article img {
     margin: 15px;
@@ -176,6 +183,10 @@ main section article i{
     border-radius: 50%;
     right: 30px;
     top : 10 px;
+}
+main section article i:hover{
+    transform: rotate(-90deg);
+    transition: all 1s;
 }
 
 .descuento{
@@ -209,11 +220,24 @@ footer section {
 
 footer section div {
     text-align: center;
-    padding: 10px
+    padding: 10px;
+    font-size: 25px;
 }
 footer section div i {
     color: blue;
 }
+footer section div i:hover{
+    animation:color_icono_footer 3s infinite alternate;
+}
+
+@keyframes color_icono_footer {
+    0% {color:#666;transform: translate(0px, -1px)}
+    25% {transform: translate(0px, -0.5px)}
+    50% {color:#39b54a; transform: translate(0px, 1px)}
+    75% {transform: translate(0px, 0.5px)}
+    100% {color:#0022AA ; transform: translate(0px, -1px)} 
+}
+
 
 
 /* Adaptabilidad para tablets y desktop */
@@ -221,11 +245,9 @@ footer section div i {
 
 @media (min-width: 420px){
 
-.descripcion {display:block}
+.descripcion {display:block;
+opacity:0%;}
 
-main section article {
-    box-shadow : 0px 0px 10px black;
-}
 header nav{
     display:block;
     display:flex;
@@ -353,7 +375,25 @@ body .camposformulario {
 body .camposregistro{
     padding:10px;
 }
-
+body .cajabotones {
+    margin-top: 20px;
+    display:flex;
+    justify-content: center;
+}
+body .botonenviar {
+    width: 120px;
+    margin-left:20px;
+    margin-right: 20px;
+}
+body .botonenviar:hover {
+   background-color: #0022AA;
+   transition: all 0.5s;
+}
+body .boton {
+    width: 120px;
+    margin-left:20px;
+    margin-right: 20px;
+}
 
 .cajacelesteregistro{
     height: 30%;
