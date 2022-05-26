@@ -23,6 +23,7 @@ a:hover {font-weight: bolder;
 
 /* Estilos de header  */
 
+
 .top-header {
     background-color: #eac926;
     padding: 15px;
@@ -115,9 +116,6 @@ header .hamburguer-button i{
     font-size: 20px;
     
 }
-
-
-
 /* Estilos de cuerpo principal  */
 
 body h2 {text-align: center;}
@@ -126,7 +124,6 @@ main{
     width: 90%;
     margin: 0 auto;
 }
-
 .logobanner{
     width: 100%
 }
@@ -263,18 +260,16 @@ main section article {
     margin-top:20px;   
 }
 header .items_menu_tienda{
-    margin-left: 5px;
-    margin-right: 3px;
+    margin-left: 7px;
+    margin-right: 10px;
 }
 header .logo {
     width: 30vw;
 }
-
 header .logoybarra {
     display:flex;
     flex-wrap: unset;
-    justify-content:left;
-    
+    justify-content:left;   
 }
 header .form .input{
     width: 30vw;
@@ -296,7 +291,6 @@ header .compraencuotas {
         max-width: 510px;}
 
 }
-
 
 /* Desktop */
 
